@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Test UniSwap</title>
+        <script src="./dist/bundle.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <!-- Connect MetaMask -->
+        <button id="connectButton" onclick="bundle.connectWallet()">Connect MetaMask</button>
+        <!-- Swap ETH To LINK -->
+        <h3>Swap ETH To LINK</h3><br>
+        <label for="inputSwapETHtoLINK">Please Enter The ETH Value</label>
+        <input type="number" id="inputSwapETHtoLINK" step="0.1" name="inputSwapETHtoLINK">
+        <button id="submitSwapETHtoLINK" onclick="bundle.swapETHtoLINK()">Execute</button>
+        <!-- Swap LINK To ETH -->
+        <h3>Swap LINK To ETH</h3><br>
+        <label for="inputSwapLINKtoETH">Please Enter The LINK Value</label>
+        <input type="number" id="inputSwapLINKtoETH" step="1000000000000000000" name="inputSwapLINKtoETH">
+        <button id="approveLINK" onclick="bundle.approveLINK01()">Approve LINK</button>
+        <button id="submitSwapLINKtoETH" onclick="bundle.swapLINKtoETH()">Execute</button>
+        <!-- Swap LINK To DAI -->
+        <h3>Swap LINK To DAI</h3><br>
+        <label for="inputSwapLINKtoDAI">Please Enter The LINK Value</label>
+        <input type="number" id="inputSwapLINKtoDAI" step="1000000000000000000" name="inputSwapLINKtoDAI">
+        <button id="approveLINK" onclick="bundle.approveLINK02()">Approve LINK</button>
+        <button id="submitSwapLINKtoDAI" onclick="bundle.swapLINKtoDAI()">Execute</button>
+        <!-- Add Liquidity LINK & ETH -->
+        <h3>Add Liquidity LINK & ETH</h3><br>
+        <p>Your LP-Token Balance Is: </p><p id="LINK_ETH_LP_Balance">???</p>
+        <button id="refreshLINK_ETH_LP_Balance" onclick="bundle.getLINK_ETH_LPbalance()">Refresh</button>
+        <br><label for="inputAddLiquidityLINK_ETH">Please Enter The ETH Value</label>
+        <input type="number" id="inputAddLiquidityLINK_ETH" step="0.1" name="inputAddLiquidityLINK_ETH">
+        <button id="refreshLINK_ETH_LP_Balance" onclick="bundle.getNeededLINK()">Calculate And Run</button>
+        <p>Your Needed LINK Is: </p><p id="neededLINK"></p>
+        <button id="approveLINK" onclick="bundle.approveLINK03()">Approve LINK</button>
+        <button id="submitLINK_ETH_LP_Balance" onclick="bundle.addLiquidityLINK_ETH()">Execute</button>
+        <!-- Remove Liquidity LINK & ETH -->
+        <h3>Remove Liquidity LINK & ETH</h3><br>
+        <label for="inputRemoveLiquidityLINK_ETH">Please Enter The LP-Token Value</label>
+        <input type="number" id="inputRemoveLiquidityLINK_ETH" step="1000000000000000000" name="inputRemoveLiquidityLINK_ETH">
+        <button id="approveLINK_ETH_LP" onclick="bundle.approveLINK_ETH_LP()">Approve LP-Token</button>
+        <button id="submitRemoveLiquidityLINK_ETH" onclick="bundle.removeLiquidityLINK_ETH()">Execute</button>
+        <!-- Add Liquidity LINK & DAI -->
+        <h3>Add Liquidity LINK & DAI</h3><br>
+        <p>Your LP-Token Balance Is: </p><p id="LINK_DAI_LP_Balance">???</p>
+        <button id="refreshLINK_DAI_LP_Balance" onclick="bundle.getLINK_DAI_LPbalance()">Refresh</button>
+        <br><label for="inputAddLiquidityLINK_DAI">Please Enter The LINK Value</label>
+        <input type="number" id="inputAddLiquidityLINK_DAI" step="0.1" name="inputAddLiquidityLINK_DAI">
+        <button id="refreshLINK_DAI_LP_Balance" onclick="bundle.getNeededDAI()">Calculate And Run</button>
+        <p>Your Needed DAI Is: </p><p id="neededDAI"></p>
+        <button id="approveLINK" onclick="bundle.approveLINK04()">Approve LINK</button>
+        <button id="approveDAI" onclick="bundle.approveDAI01()">Approve DAI</button>
+        <button id="submitLINK_DAI_LP_Balance" onclick="bundle.addLiquidityLINK_DAI()">Execute</button>
+        <!-- Remove Liquidity LINK & DAI -->
+        <h3>Remove Liquidity LINK & DAI</h3><br>
+        <label for="inputRemoveLiquidityLINK_DAI">Please Enter The LP-Token Value</label>
+        <input type="number" id="inputRemoveLiquidityLINK_DAI" step="1000000000000000000" name="inputRemoveLiquidityLINK_DAI">
+        <button id="approveLINK_DAI_LP" onclick="bundle.approveLINK_DAI_LP()">Approve LP-Token</button>
+        <button id="submitRemoveLiquidityLINK_DAI" onclick="bundle.removeLiquidityLINK_DAI()">Execute</button>
+    </body>
+</html>
