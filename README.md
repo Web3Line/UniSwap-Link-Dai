@@ -9,6 +9,7 @@ The main functions in the main.sol:
   5. removeLiquidityLINK_ETH
   6. addLiquidityLINK_DAI
   7. removeLiquidityLINK_DAI
+
 And also this smart contract linked to a simple HTML file named index.html that uses the contract to user friendly front-end
 Also the JS files using the EthersJS library written in the index.js file and compiled with Browserify.
 The Yarn dependencies also maintained in the repository for users further use.
