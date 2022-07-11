@@ -1,6 +1,6 @@
 # UniSwap-Link-Dai
 Almost All UniSwapV2 Attributes In One!
-In this project we use UniSwapV2 contracts to swap between Ethereum and LINK, DAI tokens and also providing and removing liquidity between these tokens.
+In this project we use UniSwapV2 contracts to swap between Ethereum and LINK, DAI tokens and also providing and removing liquidity between these tokens on Rinkeby Testnet.
 The main functions in the main.sol:
   1. swapETHtoLINK
   2. swapLINKtoETH
